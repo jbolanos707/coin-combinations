@@ -1,6 +1,7 @@
 require('capybara/rspec')
 require('./app')
 Capybara.app = Sinatra::Application
+set(:show_exceptions, false)
 
 describe('the coin combinations path', {:type => :feature}) do
   it('processes user entry and returns change description') do
