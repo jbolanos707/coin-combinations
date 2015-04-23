@@ -19,6 +19,6 @@ describe('Fixnum#coin_comb') do
   end
 
   it('returns the optimal combination of coins') do
-    expect(117.coin_comb()).to(eq({'quarters' => 4, 'dime'=> 1, 'nickel' => 7, 'pennies' => 2}))
+    expect(117.coin_comb()).to(eq({'quarters' => 4, 'dimes'=> 1, 'nickels' => 1, 'pennies' => 2}))
   end
 end
